@@ -58,7 +58,7 @@ automine<-function(formula,model,tactic,data,seed){
       number = 10,
       repeats = 2,
       allowParallel=TRUE)
-    re1<-train(fr, data = train, method=model, trControl =regfit, metric=tactic)
+    re1<-train(formula, data = train, method=model, trControl =regfit, metric=tactic)
     re2<-predict(re1, newdata=test)
     re3<-test[dv][,1]-re2
     re4<-postResample(re2, unlist(test[dv][,1]))
