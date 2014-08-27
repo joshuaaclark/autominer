@@ -3,7 +3,6 @@ Title: Smooth CARET Workflow
 Version: 0.1
 Authors@R: "Joshua Clark <joshuaac@usc.edu> [aut, cre]"
 Description: Bundles popular CARET commands into a simple workflow
-Depends: PROC, doMC, caret
-    R (>= 3.1.0)
+Depends: pROC, doMC, caret, R (>= 3.1.0)
 License: GPL-2
 LazyData: true
